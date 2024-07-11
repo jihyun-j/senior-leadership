@@ -4,7 +4,7 @@ import firebase from "firebase/compat/app";
 import { auth } from "../firebase/config";
 import { useEffect } from "react";
 
-const Login = () => {
+const Login: React.FC = () => {
   const uiConfig = {
     signInSuccessUrl: "/",
     signInOptions: [firebase.auth.EmailAuthProvider.PROVIDER_ID],
