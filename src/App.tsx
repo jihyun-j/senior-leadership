@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import ProfessionalDevelopment from "./pages/professional-development/ProfessionalDevelopment";
 import ExecutiveCoaching from "./pages/executive-coaching/ExecutiveCoaching";
 import LeadershipCompetencies from "./pages/leadership-competencies/LeadershipCompetencies";
+import SubCategories from "./pages/leadership-competencies/SubCategories";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         <Route
           path="/executive-coaching"
           element={<ExecutiveCoaching />}></Route>
+        <Route
+          path="/leadership-competencies/:sub-category"
+          element={<SubCategories />}></Route>
       </Routes>
     </BrowserRouter>
   );

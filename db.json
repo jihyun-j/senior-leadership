@@ -9,8 +9,8 @@
         "Models personal reliability and accountability; driving systems that assign clear responsibility for important objects and ensures accountability acreoss the function"
       ],
       "path": "/building-trust",
-      "image": "../assets/images/leadership-competencies/building-trust.png",
-      "headerImage": "../assets/images/learning-resources-header/building-trust-header.png",
+      "image": "/public/assets/sub-category-card/building-trust.png",
+      "headerImage": "/public/assets/sub-category-header/building-trust-header.png",
       "subCategories": [
         {
           "title": "Trusted Partner Leadership Intention Workshop",
@@ -72,8 +72,8 @@
         "Functions as effetively under conditions of ambiguity as when things are more certain"
       ],
       "path": "/agility",
-      "image": "../assets/images/leadership-competencies/agility.png",
-      "headerImage": "../assets/images/learning-resources-header/building-trust-header.png",
+      "image": "/public/assets/sub-category-card/agility.png",
+      "headerImage": "/public/assets/sub-category-header/agility-header.png",
       "subCategories": [
         {
           "title": "How Adaptive Strategy Happens",
@@ -146,8 +146,8 @@
         "Communicates decision rationale, builds alignment around decisions among critical stakeholders, and escalates appropriately"
       ],
       "path": "/decision-making",
-      "image": "../assets/images/leadership-competencies/decision-making.png",
-      "headerImage": "../assets/images/learning-resources-header/building-trust-header.png",
+      "image": "/public/assets/sub-category-card/decision-making.png",
+      "headerImage": "/public/assets/sub-category-header/decision-making-header.png",
       "subCategories": [
         {
           "title": "Speed as a Habit",
@@ -220,8 +220,8 @@
         "Display curiosity and sincere desite to understand other's perspectives, and seeks out divergent points of view, especially when making decisions"
       ],
       "path": "/empathic-and-inclusive-leadership",
-      "image": "../assets/images/leadership-competencies/empathic-and-inclusive-leadership.png",
-      "headerImage": "../assets/images/learning-resources-header/building-trust-header.png",
+      "image": "/public/assets/sub-category-card/empathic-and-inclusive-leadership.png",
+      "headerImage": "/public/assets/sub-category-header/empathic-and-inclusive-leadership-header.png",
       "subCategories": [
         {
           "title": "The Key to Inclusive Leadership",
@@ -294,8 +294,8 @@
         "Does not over-index on consensus, permission-seeking, or exclusive alliances"
       ],
       "path": "/boundary-spanning",
-      "image": "../assets/images/leadership-competencies/boundary-spanning.png",
-      "headerImage": "../assets/images/learning-resources-header/building-trust-header.png",
+      "image": "/public/assets/sub-category-card/boundary-spanning.png",
+      "headerImage": "/public/assets/sub-category-header/boundary-spanning-header.png",
       "subCategories": [
         {
           "title": "What is Boundary Spanning? Definition, Examples & Uses to an Organization",
@@ -368,8 +368,8 @@
         "Takes responsibility and ownership, ensuring people leaders have the resources needed to accomplish the work for the success of the function"
       ],
       "path": "/setting-strategic-vision",
-      "image": "../assets/images/leadership-competencies/setting-strategic-vision.png",
-      "headerImage": "../assets/images/learning-resources-header/building-trust-header.png",
+      "image": "/public/assets/sub-category-card/setting-strategic-vision.png",
+      "headerImage": "/public/assets/sub-category-header/setting-strategic-vision-header.png",
       "subCategories": [
         {
           "title": "Connecting Your Work to Your Purpose",
@@ -418,8 +418,8 @@
         "Clarifies and anticipates customer needs to be solved for and shapes longer-term markets through testing and oprn iteration"
       ],
       "path": "/creativity-and-innovation",
-      "image": "../assets/images/leadership-competencies/creativity-and-innovation.png",
-      "headerImage": "../assets/images/learning-resources-header/building-trust-header.png",
+      "image": "/public/assets/sub-category-card/creativity-and-innovation.png",
+      "headerImage": "/public/assets/sub-category-header/creativity-and-innovation-header.png",
       "subCategories": [
         {
           "title": "Cultivating the Four Kinds of Creativity",
@@ -492,8 +492,8 @@
         "Communicates a compelling vision for solutions / recommendations"
       ],
       "path": "/influencing",
-      "image": "../assets/images/leadership-competencies/influencing.png",
-      "headerImage": "../assets/images/learning-resources-header/building-trust-header.png",
+      "image": "/public/assets/sub-category-card/influencing.png",
+      "headerImage": "/public/assets/sub-category-header/influencing-header.png",
       "subCategories": [
         {
           "title": "Getting Employee Buy-In for Organizational Change",
@@ -566,8 +566,8 @@
         "Facilitates stretch opportunities and sharing of talent across the organization to maintain their competitive advantage"
       ],
       "path": "/building-talent",
-      "image": "../assets/images/leadership-competencies/building-talent.png",
-      "headerImage": "../assets/images/learning-resources-header/building-trust-header.png",
+      "image": "/public/assets/sub-category-card/building-talent.png",
+      "headerImage": "/public/assets/sub-category-header/building-talent-header.png",
       "subCategories": [
         {
           "title": "How to Attract Top Talent in 2022",
@@ -628,8 +628,8 @@
         "Demonstrates strong commercial acumen by aligning investments to impactful areas for customers and / or Autodesk"
       ],
       "path": "/business-impact",
-      "image": "../assets/images/leadership-competencies/business-impact.png",
-      "headerImage": "../assets/images/learning-resources-header/building-trust-header.png",
+      "image": "/public/assets/sub-category-card/business-impact.png",
+      "headerImage": "/public/assets/sub-category-header/business-impact-header.png",
       "subCategories": [
         {
           "title": "Level Up Your Leaders",
