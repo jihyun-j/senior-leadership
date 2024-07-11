@@ -1,7 +1,12 @@
 import React from "react";
+import CategoryHeader from "../../components/CategoryHeader";
 
 const ExecutiveCoaching: React.FC = () => {
-  return <div>ExecutiveCoaching</div>;
+  return (
+    <div>
+      <CategoryHeader />
+    </div>
+  );
 };
 
 export default ExecutiveCoaching;

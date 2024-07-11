@@ -3,7 +3,21 @@ import { useLocation } from "react-router";
 import { navMenu } from "../util/nav";
 
 const CategoryHeader = () => {
-  return <div></div>;
+  const { pathname } = useLocation();
+
+  return (
+    <div>
+      {navMenu
+        .filter((item) => item.navLink === pathname)
+        .map((item) => {
+          return (
+            <div>
+              <img src={`${item.navImage}`} alt="" />
+            </div>
+          );
+        })}
+    </div>
+  );
 };
 
 export default CategoryHeader;

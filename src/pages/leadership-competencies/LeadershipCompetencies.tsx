@@ -1,7 +1,12 @@
 import React from "react";
+import CategoryHeader from "../../components/CategoryHeader";
 
 const LeadershipCompetencies: React.FC = () => {
-  return <div>LeadershipCompetencies</div>;
+  return (
+    <>
+      <CategoryHeader />
+    </>
+  );
 };
 
 export default LeadershipCompetencies;

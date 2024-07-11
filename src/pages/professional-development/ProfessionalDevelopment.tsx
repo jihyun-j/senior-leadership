@@ -1,7 +1,8 @@
 import React from "react";
+import CategoryHeader from "../../components/CategoryHeader";
 
 const ProfessionalDevelopment: React.FC = () => {
-  return <div>ProfessionalDevelopment</div>;
+  return <CategoryHeader />;
 };
 
 export default ProfessionalDevelopment;
