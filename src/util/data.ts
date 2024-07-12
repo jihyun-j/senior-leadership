@@ -1,37 +1,13 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-
-// Types
-
-type ResourceType = {
-  type: string;
-  url: string;
-  progress: number;
-};
-
-type SubCategoriesType = {
-  title: string;
-  description: string;
-  progress: number;
-  resource: ResourceType[];
-};
-
-interface Categories {
-  title: string;
-  description: string;
-  definition: string[];
-  path: string;
-  image: string;
-  headerImage: string;
-  subCategories: SubCategoriesType[];
-}
+import { CategoriesType } from "../types/categories";
 
 // API
 const baseUrl = "http://localhost:3000/categories";
 
-const fetchCategoryData = async (): Promise<Categories[]> => {
+const fetchCategoryData = async (): Promise<CategoriesType[]> => {
   try {
-    const response = await axios.get<Categories[]>(baseUrl);
+    const response = await axios.get<CategoriesType[]>(baseUrl);
     return response.data;
   } catch (error) {
     return [];
@@ -40,7 +16,7 @@ const fetchCategoryData = async (): Promise<Categories[]> => {
 
 // CUSTOM HOOK
 export const useFetchCategory = () => {
-  const [data, setData] = useState<Categories[] | null>(null);
+  const [data, setData] = useState<CategoriesType[] | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {

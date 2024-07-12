@@ -23,7 +23,7 @@ function App() {
           path="/executive-coaching"
           element={<ExecutiveCoaching />}></Route>
         <Route
-          path="/leadership-competencies/:sub-category"
+          path="/leadership-competencies/:subCategory"
           element={<SubCategories />}></Route>
       </Routes>
     </BrowserRouter>
