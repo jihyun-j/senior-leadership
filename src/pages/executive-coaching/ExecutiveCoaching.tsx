@@ -1,10 +1,11 @@
 import React from "react";
-import CategoryHeader from "../../components/CategoryHeader";
+
+import PageHeader from "../../components/PageHeader";
 
 const ExecutiveCoaching: React.FC = () => {
   return (
     <div>
-      <CategoryHeader />
+      <PageHeader />
     </div>
   );
 };

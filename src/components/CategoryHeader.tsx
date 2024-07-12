@@ -1,23 +1,7 @@
-import React from "react";
-import { useLocation } from "react-router";
-import { navMenu } from "../util/nav";
+import { CategoryHeaderPropsType } from "../types/categories";
 
-const CategoryHeader = () => {
-  const { pathname } = useLocation();
-
-  return (
-    <div>
-      {navMenu
-        .filter((item) => item.navLink === pathname)
-        .map((item) => {
-          return (
-            <div key={item.navName}>
-              <img src={`${item.navImage}`} alt="" />
-            </div>
-          );
-        })}
-    </div>
-  );
+const CategoryHeader: React.FC<CategoryHeaderPropsType> = ({ headerImg }) => {
+  return <img src={`${headerImg}`} alt="" />;
 };
 
 export default CategoryHeader;

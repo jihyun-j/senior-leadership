@@ -1,12 +1,13 @@
 import React from "react";
-import CategoryHeader from "../../components/CategoryHeader";
-import SubCategoryCard from "../../components/leadership-competencies/SubCategoryCards";
+
+import CategoryCard from "../../components/leadership-competencies/CategoryCards";
+import PageHeader from "../../components/PageHeader";
 
 const LeadershipCompetencies: React.FC = () => {
   return (
     <>
-      <CategoryHeader />
-      <SubCategoryCard />
+      <PageHeader />
+      <CategoryCard />
     </>
   );
 };

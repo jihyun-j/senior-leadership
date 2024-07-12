@@ -5,7 +5,7 @@ export type ResourceType = {
   progress: number;
 };
 
-export type SubCategoriesType = {
+export type SubjectType = {
   title: string;
   description: string;
   progress: number;
@@ -19,15 +19,20 @@ export type CategoriesType = {
   path: string;
   image: string;
   headerImage: string;
-  subCategories: SubCategoriesType[];
+  subjects: SubjectType[];
 };
 
 // SubCategoryHeader
 
-export type SubCategoryHeaderPropsType = {
+export type CategoryHeaderPropsType = {
   headerImg: string[] | undefined;
 };
 
-export type SubCategoriesPropsType = {
-  subCategories: SubCategoriesType[][] | undefined;
+export type SubjectPropsType = {
+  subjects: SubjectType[][] | undefined;
+};
+
+export type VideoResourcePropsType = {
+  url: string[];
+  onEnded: () => void;
 };

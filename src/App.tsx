@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import ProfessionalDevelopment from "./pages/professional-development/ProfessionalDevelopment";
 import ExecutiveCoaching from "./pages/executive-coaching/ExecutiveCoaching";
 import LeadershipCompetencies from "./pages/leadership-competencies/LeadershipCompetencies";
-import SubCategories from "./pages/leadership-competencies/SubCategories";
+import SubjectsPage from "./pages/leadership-competencies/SubjectsPage";
 
 function App() {
   return (
@@ -23,8 +23,8 @@ function App() {
           path="/executive-coaching"
           element={<ExecutiveCoaching />}></Route>
         <Route
-          path="/leadership-competencies/:subCategory"
-          element={<SubCategories />}></Route>
+          path="/leadership-competencies/:categoryName"
+          element={<SubjectsPage />}></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { useFetchCategory } from "../../util/data";
 import { Link } from "react-router-dom";
 
-const SubCategoryCard = () => {
+const CategoryCard: React.FC = () => {
   const categories = useFetchCategory();
 
   return (
@@ -21,4 +21,4 @@ const SubCategoryCard = () => {
     </div>
   );
 };
-export default SubCategoryCard;
+export default CategoryCard;

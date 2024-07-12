@@ -11,7 +11,7 @@
       "path": "/building-trust",
       "image": "/public/assets/sub-category-card/building-trust.png",
       "headerImage": "/public/assets/sub-category-header/building-trust-header.png",
-      "subCategories": [
+      "subjects": [
         {
           "title": "Trusted Partner Leadership Intention Workshop",
           "description": "Through reflective activities and open discussions, attendees will explore the intricacies of trust-building, identify personal trust anchors and wobbles, and strategize ways to authentically model trust-centric behaviors across diverse team settings.",
@@ -19,7 +19,7 @@
           "resource": [
             {
               "type": "video",
-              "url": "",
+              "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
               "progress": 0
             }
           ]
@@ -31,7 +31,7 @@
           "resource": [
             {
               "type": "video",
-              "url": "",
+              "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
               "progress": 0
             }
           ]
@@ -43,7 +43,8 @@
           "resource": [
             {
               "type": "video",
-              "url": "",
+              "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+
               "progress": 0
             }
           ]
@@ -55,7 +56,7 @@
           "resource": [
             {
               "type": "video",
-              "url": "",
+              "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
               "progress": 0
             }
           ]
@@ -74,7 +75,7 @@
       "path": "/agility",
       "image": "/public/assets/sub-category-card/agility.png",
       "headerImage": "/public/assets/sub-category-header/agility-header.png",
-      "subCategories": [
+      "subjects": [
         {
           "title": "How Adaptive Strategy Happens",
           "description": "The article underscores the need for flexible strategic planning in organizations, comparing it to sailing and suggesting practices like defining an Essential Intent, setting strategic trade-offs, and identifying 90-day outcomes. It concludes by advocating for organizations to operate as adaptable fleets rather than large, inflexible cruise ships.",
@@ -94,7 +95,8 @@
           "resource": [
             {
               "type": "video",
-              "url": "",
+              "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+
               "progress": 0
             }
           ]
@@ -106,7 +108,8 @@
           "resource": [
             {
               "type": "video",
-              "url": "",
+              "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+
               "progress": 0
             }
           ]
@@ -118,7 +121,7 @@
           "resource": [
             {
               "type": "video",
-              "url": "",
+              "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
               "progress": 0
             }
           ]
@@ -148,7 +151,7 @@
       "path": "/decision-making",
       "image": "/public/assets/sub-category-card/decision-making.png",
       "headerImage": "/public/assets/sub-category-header/decision-making-header.png",
-      "subCategories": [
+      "subjects": [
         {
           "title": "Speed as a Habit",
           "description": "All things being equal, speed will determine whether your company succeeds or not. Here's how to make it core to your culture.",
@@ -222,7 +225,7 @@
       "path": "/empathic-and-inclusive-leadership",
       "image": "/public/assets/sub-category-card/empathic-and-inclusive-leadership.png",
       "headerImage": "/public/assets/sub-category-header/empathic-and-inclusive-leadership-header.png",
-      "subCategories": [
+      "subjects": [
         {
           "title": "The Key to Inclusive Leadership",
           "description": "Inclusive leadership is emerging as a unique and critical capability helping organisations adapt to diverse customers, markets, ideas and talent. For those working around a leader, such as a manager, direct report or peer, the single most important trait generating a sense of inclusiveness is a leader’s visible awareness of bias. But to fully capitalize on their cognizance of bias, leaders also must express both humility and empathy. This article describes organizational practices that can help leaders become more inclusive and enhance the performance of their teams.",
@@ -296,7 +299,7 @@
       "path": "/boundary-spanning",
       "image": "/public/assets/sub-category-card/boundary-spanning.png",
       "headerImage": "/public/assets/sub-category-header/boundary-spanning-header.png",
-      "subCategories": [
+      "subjects": [
         {
           "title": "What is Boundary Spanning? Definition, Examples & Uses to an Organization",
           "description": "Boundary spanning is a process of developing external relationships by spanning the boundaries for the accomplishment of business objectives. It refers to a situation where an individual or an organization crosses the boundaries of a social group.",
@@ -370,7 +373,7 @@
       "path": "/setting-strategic-vision",
       "image": "/public/assets/sub-category-card/setting-strategic-vision.png",
       "headerImage": "/public/assets/sub-category-header/setting-strategic-vision-header.png",
-      "subCategories": [
+      "subjects": [
         {
           "title": "Connecting Your Work to Your Purpose",
           "description": "In this course, author and coach Alexandra Cole shows you how to define and achieve purpose in a way that is custom-fitted to your own life. Alexandra presents a host of tools for your journey, like identifying some common blockers on your path to purpose, understanding the important difference between passion and purpose, and narrowing down to find your next best step",
@@ -420,7 +423,7 @@
       "path": "/creativity-and-innovation",
       "image": "/public/assets/sub-category-card/creativity-and-innovation.png",
       "headerImage": "/public/assets/sub-category-header/creativity-and-innovation-header.png",
-      "subCategories": [
+      "subjects": [
         {
           "title": "Cultivating the Four Kinds of Creativity",
           "description": "In this article the authors offer a new typology that breaks creative thinking into four types: integration, or showing that two things that appear different are the same; splitting, or seeing how… One island of stability in the sea of conversation about the future of work is the conviction that our jobs will become increasingly creative.",
@@ -494,7 +497,7 @@
       "path": "/influencing",
       "image": "/public/assets/sub-category-card/influencing.png",
       "headerImage": "/public/assets/sub-category-header/influencing-header.png",
-      "subCategories": [
+      "subjects": [
         {
           "title": "Getting Employee Buy-In for Organizational Change",
           "description": "Although change is never easy, how leaders approach it makes a significant difference to whether it’s embraced or rejected. By addressing the organizational buy-in context, it’s much easier to move past resistance and stagnation, because your path forward will be shaped by realities rather than banalities. The most successful organizations do this by addressing six components of culture: legitimacy, ownership, relevance, attainability, authenticity, and impartiality.",
@@ -568,7 +571,7 @@
       "path": "/building-talent",
       "image": "/public/assets/sub-category-card/building-talent.png",
       "headerImage": "/public/assets/sub-category-header/building-talent-header.png",
-      "subCategories": [
+      "subjects": [
         {
           "title": "How to Attract Top Talent in 2022",
           "description": "A seismic change in how people view work and the meaning work brings to their lives has created the biggest talent crisis in recent history.",
@@ -630,7 +633,7 @@
       "path": "/business-impact",
       "image": "/public/assets/sub-category-card/business-impact.png",
       "headerImage": "/public/assets/sub-category-header/business-impact-header.png",
-      "subCategories": [
+      "subjects": [
         {
           "title": "Level Up Your Leaders",
           "description": "Work, fast-tracked into the future In recent years, one adage has reverberated from boardrooms to business headlines: 'Future-proof your organization.'",

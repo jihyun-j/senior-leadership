@@ -1,8 +1,8 @@
 import React from "react";
-import CategoryHeader from "../../components/CategoryHeader";
+import PageHeader from "../../components/PageHeader";
 
 const ProfessionalDevelopment: React.FC = () => {
-  return <CategoryHeader />;
+  return <PageHeader />;
 };
 
 export default ProfessionalDevelopment;
