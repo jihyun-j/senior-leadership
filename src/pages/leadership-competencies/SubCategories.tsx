@@ -14,13 +14,17 @@ const SubCategories: React.FC = () => {
     .map((category) => category.headerImage);
 
   // 러닝 리소스만 추출해서 넣기
+  const subCategories = categories
+    ?.filter((category) => category.path === `/${subCategory}`)
+    .map((category) => category.subCategories);
 
+  console.log(subCategories);
   // path와 param 매치 시켜 필터
 
   return (
     <div>
       <SubCategoryHeader headerImg={headerImg} />
-      {/* <LearningResources categories={categories} path={subCategory} />  */}
+      <LearningResources subCategories={subCategories} />
     </div>
   );
 };

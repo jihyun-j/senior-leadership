@@ -12,7 +12,7 @@ export type SubCategoriesType = {
   resource: ResourceType[];
 };
 
-export interface CategoriesType {
+export type CategoriesType = {
   title: string;
   description: string;
   definition: string[];
@@ -20,10 +20,14 @@ export interface CategoriesType {
   image: string;
   headerImage: string;
   subCategories: SubCategoriesType[];
-}
+};
 
 // SubCategoryHeader
 
-export interface SubCategoryHeaderType {
+export type SubCategoryHeaderPropsType = {
   headerImg: string[] | undefined;
-}
+};
+
+export type SubCategoriesPropsType = {
+  subCategories: SubCategoriesType[][] | undefined;
+};

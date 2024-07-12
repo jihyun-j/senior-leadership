@@ -1,6 +1,8 @@
-import { SubCategoryHeaderType } from "../../types/categories";
+import { SubCategoryHeaderPropsType } from "../../types/categories";
 
-const SubCategoryHeader: React.FC<SubCategoryHeaderType> = ({ headerImg }) => {
+const SubCategoryHeader: React.FC<SubCategoryHeaderPropsType> = ({
+  headerImg,
+}) => {
   return (
     <div>
       <img src={`${headerImg}`} alt="" />

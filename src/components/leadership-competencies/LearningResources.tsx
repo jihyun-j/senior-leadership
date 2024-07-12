@@ -1,9 +1,22 @@
 import React from "react";
-import { useFetchCategory } from "../../util/data";
-import { useParams } from "react-router";
+import { SubCategoriesPropsType } from "../../types/categories";
 
-const LearningResources = ({ data, path }) => {
-  return <div>resource</div>;
+const LearningResources: React.FC<SubCategoriesPropsType> = ({
+  subCategories,
+}) => {
+  return (
+    <div>
+      {subCategories?.map((subCategory) => {
+        return (
+          <div>
+            {subCategory.map((category) => {
+              return <div>{category.title}</div>;
+            })}
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 
 export default LearningResources;
