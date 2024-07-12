@@ -1,8 +1,12 @@
-// Fetch Categories
-export type ResourceType = {
-  type: string;
-  url: string;
-  progress: number;
+export type CategoriesType = {
+  title: string;
+  description: string;
+  definition: string[];
+  path: string;
+  image: string;
+  headerImage: string;
+  completed: boolean;
+  subjects: SubjectType[];
 };
 
 export type SubjectType = {
@@ -12,17 +16,10 @@ export type SubjectType = {
   resource: ResourceType[];
 };
 
-export type CategoriesType = {
-  title: string;
-  description: string;
-  definition: string[];
-  path: string;
-  image: string;
-  headerImage: string;
-  subjects: SubjectType[];
+export type ResourceType = {
+  type: string;
+  url: string;
 };
-
-// SubCategoryHeader
 
 export type CategoryHeaderPropsType = {
   headerImg: string[] | undefined;
