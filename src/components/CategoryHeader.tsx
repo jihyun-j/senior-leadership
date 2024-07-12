@@ -11,7 +11,7 @@ const CategoryHeader = () => {
         .filter((item) => item.navLink === pathname)
         .map((item) => {
           return (
-            <div>
+            <div key={item.navName}>
               <img src={`${item.navImage}`} alt="" />
             </div>
           );
