@@ -11,10 +11,21 @@ const Login: React.FC = () => {
   };
 
   useEffect(() => {
-    const unregisterAuthObserver = auth.onAuthStateChanged((user) => {
-      localStorage.setItem("user", JSON.stringify(user?.uid));
+    const authObserver = auth.onAuthStateChanged(async (user) => {
+      if (user) {
+        try {
+          const token = await auth.currentUser?.getIdToken();
+          if (token) {
+            localStorage.setItem("user_token", token);
+          }
+        } catch (error) {
+          console.log(error);
+        }
+      } else {
+        localStorage.removeItem("user_token");
+      }
     });
-    return () => unregisterAuthObserver();
+    return () => authObserver();
   }, []);
 
   return (
