@@ -7,6 +7,7 @@ import ExecutiveCoaching from "./pages/executive-coaching/ExecutiveCoaching";
 import LeadershipCompetencies from "./pages/leadership-competencies/LeadershipCompetencies";
 import SubjectsPage from "./pages/leadership-competencies/SubjectsPage";
 import Login from "./pages/Login";
+import PrivateRoutes from "./util/PrivateRoutes";
 
 function App() {
   return (
@@ -14,19 +15,21 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="login" element={<Login />}></Route>
-        <Route path="/" element={<Home />}></Route>
-        <Route
-          path="/professional-development"
-          element={<ProfessionalDevelopment />}></Route>
-        <Route
-          path="/leadership-competencies"
-          element={<LeadershipCompetencies />}></Route>
-        <Route
-          path="/executive-coaching"
-          element={<ExecutiveCoaching />}></Route>
-        <Route
-          path="/leadership-competencies/:categoryName"
-          element={<SubjectsPage />}></Route>
+        <Route element={<PrivateRoutes />}>
+          <Route path="/" element={<Home />}></Route>
+          <Route
+            path="/professional-development"
+            element={<ProfessionalDevelopment />}></Route>
+          <Route
+            path="/leadership-competencies"
+            element={<LeadershipCompetencies />}></Route>
+          <Route
+            path="/executive-coaching"
+            element={<ExecutiveCoaching />}></Route>
+          <Route
+            path="/leadership-competencies/:categoryName"
+            element={<SubjectsPage />}></Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   );

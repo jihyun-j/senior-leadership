@@ -24,7 +24,6 @@ const SubjectCard: React.FC<SubjectPropsType> = ({ subjects }) => {
                 url={subject.resource.map((resource) => resource.url)}
                 onEnded={() => onEndedHandler(subject.title)}
               />
-              <span>{subject.completed ? "Done" : "Not"}</span>
               <p>{subject.title}</p>
               <p>{subject.description}</p>
             </div>

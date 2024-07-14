@@ -11,18 +11,3 @@ export const fetchCategoryData = async (): Promise<CategoriesType[]> => {
     return [];
   }
 };
-
-// export const updateSubjectCompletion = async (
-//   title: string,
-//   completed: boolean
-// ): Promise<void> => {
-//   try {
-//     await axios.post(baseUrl, {
-//       title,
-//       completed,
-//     });
-//   } catch (error) {
-//     console.log(error);
-//     return;
-//   }
-// };

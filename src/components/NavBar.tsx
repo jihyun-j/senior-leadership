@@ -7,7 +7,6 @@ const NavBar: React.FC = () => {
   const user = localStorage.getItem("user");
   const userName = auth.currentUser?.displayName;
 
-  console.log(userName);
   return (
     <nav className="flex justify-between items-center bg-black h-20 text-white">
       <Link to="/">Senior Learning</Link>

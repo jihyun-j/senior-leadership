@@ -5,14 +5,12 @@ export type CategoriesType = {
   path: string;
   image: string;
   headerImage: string;
-  progress: number;
   subjects: SubjectType[];
 };
 
 export type SubjectType = {
   title: string;
   description: string;
-  completed: boolean;
   resource: ResourceType[];
 };
 
