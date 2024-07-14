@@ -11,12 +11,10 @@
       "path": "/building-trust",
       "image": "/public/assets/sub-category-card/building-trust.png",
       "headerImage": "/public/assets/sub-category-header/building-trust-header.png",
-      "progress": 0,
       "subjects": [
         {
           "title": "Trusted Partner Leadership Intention Workshop",
           "description": "Through reflective activities and open discussions, attendees will explore the intricacies of trust-building, identify personal trust anchors and wobbles, and strategize ways to authentically model trust-centric behaviors across diverse team settings.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -27,7 +25,6 @@
         {
           "title": "Begin with Trust",
           "description": "This article explains how leaders can identify their weaknesses and strengths on these three dimensions and offers advice on how all three can be developed in the service of a truly empowering leadership style.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -38,7 +35,6 @@
         {
           "title": "Failure Spectrum: Strategies for Learning from Failure",
           "description": "In this article, learn to recognize that failure is inevitable in today's complex work organizations, however some failures are even good. Successful learning from failure is not simple: It requires context-specific strategies. First leaders must understand how the blame game gets in the way and must work to create an organizational culture in which employees feel safe admitting or reporting on failure.  Learn about the different types of failures and how to learn from each.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -49,7 +45,6 @@
         {
           "title": "Special Issue: How to Build Trust (Skill Path)",
           "description": "Dive into this MyLearning skill plan on building trust. Learn more about how to cultivate relationships with customers and colleagues, win over skeptics, and inspire others through these curated resources.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -70,12 +65,10 @@
       "path": "/agility",
       "image": "/public/assets/sub-category-card/agility.png",
       "headerImage": "/public/assets/sub-category-header/agility-header.png",
-      "progress": 0,
       "subjects": [
         {
           "title": "How Adaptive Strategy Happens",
           "description": "The article underscores the need for flexible strategic planning in organizations, comparing it to sailing and suggesting practices like defining an Essential Intent, setting strategic trade-offs, and identifying 90-day outcomes. It concludes by advocating for organizations to operate as adaptable fleets rather than large, inflexible cruise ships.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -86,7 +79,6 @@
         {
           "title": "Cultivating Mental Agility",
           "description": "In today's rapidly changing world, we need to challenge conventional thinking to become efficient problem solvers and decision makers. Dorie Clark's course emphasizes the importance of mental agility for career growth and company relevance, covering resilience building, learning from past experiences, and creating a culture that can adapt to change.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -97,7 +89,6 @@
         {
           "title": "Geopolitical Risk - Navigating a world in flux",
           "description": "In a fast-fragmenting world, geopolitical instability has vaulted to the top of the CEO agenda. Here’s what today’s fraught global dynamics mean for leaders—and how they can begin grappling with geopolitical risk successfully.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -108,7 +99,6 @@
         {
           "title": "Building Resilience as a Leader",
           "description": "This course by psychologist and executive coach, Gemma Leigh Roberts, focuses on resilience as a key attribute for successful leadership. It provides practical strategies to develop resilience, enabling individuals to tackle challenges, lead effectively, and build robust teams and organizations that can withstand risks and change, particularly useful for busy leaders navigating challenging times.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -119,7 +109,6 @@
         {
           "title": "Strategic Agility",
           "description": "Gary Bolles' course discusses the need for adaptive strategies in today's fast-paced, ever-changing work environment. It guides organizational leaders on how to become an adaptive organization, touching on key aspects like hiring decisions, company values, process alignment, risk management, and the behaviors that senior leaders should exemplify",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -140,12 +129,10 @@
       "path": "/decision-making",
       "image": "/public/assets/sub-category-card/decision-making.png",
       "headerImage": "/public/assets/sub-category-header/decision-making-header.png",
-      "progress": 0,
       "subjects": [
         {
           "title": "Speed as a Habit",
           "description": "All things being equal, speed will determine whether your company succeeds or not. Here's how to make it core to your culture.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -156,7 +143,6 @@
         {
           "title": "Even/Over Statements: The Prioritization Tool That Brings Your Strategy to Life",
           "description": "The article introduces 'Even/Over' statements as a tool to prioritize one aspect over another for improved decision-making and strategic edge in business, with successful examples from Airbnb and In-N-Out Burger, and outlines a method to define these statements within teams to foster aligned autonomy and scale effective decision-making.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -167,7 +153,6 @@
         {
           "title": "7 Strategies for Better Group Decision-Making",
           "description": "The article discusses the benefits and pitfalls of group decision-making, highlighting the risk of groupthink and biases. It recommends seven behavioral science-backed strategies to enhance group decision-making, including keeping the group small, encouraging diversity, appointing a devil’s advocate, collecting independent opinions, creating a safe speaking environment, not over-relying on experts, and sharing collective responsibility for outcomes.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -178,7 +163,6 @@
         {
           "title": "Making Key Decisions as a Manager",
           "description": "In this course, management expert Kevin Eikenberry guides managers on effective decision-making, distinguishing key decisions from others, and the impact of these decisions on people and processes. He presents different decision-making approaches, considerations for critical decisions, and how to implement and communicate these decisions effectively. The course aims to boost decision-making confidence, leading to better outcomes for the organization and team, and enhancing chances of success.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -189,7 +173,6 @@
         {
           "title": "Decision-Making in High Stress Situations",
           "description": "In this course, Becki Saltzman teaches how to use stress as an advantage in decision-making, especially during crises. She provides techniques to discover hidden options, evaluate potential outcomes, avoid consensus-driven decision pitfalls, and make sound judgment calls. The course aims to help prevent stress from hindering effective decision-making.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -210,12 +193,10 @@
       "path": "/empathic-and-inclusive-leadership",
       "image": "/public/assets/sub-category-card/empathic-and-inclusive-leadership.png",
       "headerImage": "/public/assets/sub-category-header/empathic-and-inclusive-leadership-header.png",
-      "progress": 0,
       "subjects": [
         {
           "title": "The Key to Inclusive Leadership",
           "description": "Inclusive leadership is emerging as a unique and critical capability helping organisations adapt to diverse customers, markets, ideas and talent. For those working around a leader, such as a manager, direct report or peer, the single most important trait generating a sense of inclusiveness is a leader’s visible awareness of bias. But to fully capitalize on their cognizance of bias, leaders also must express both humility and empathy. This article describes organizational practices that can help leaders become more inclusive and enhance the performance of their teams.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -226,7 +207,6 @@
         {
           "title": "Using a Mantra to be a more inclusive leader",
           "description": "One of the greatest challenges facing leaders today is creating a culture of inclusiveness, where all members are treated equitably and feel equally valued. To develop truly inclusive behaviors, leaders must start by understanding the psychological mechanisms that are holding them back. Then, they can take actions — including using the “mantra” technique — to ensure their behavior has the intended impact. A mantra is a phrase that is repeated silently before entering a challenging context to focus the mind and body on a clear, unambiguous intention. The authors teach mantra as a tool to help leaders behave in a way that’s consistent with their values. Here, they offer simple steps to help leaders harness the power of mantra in creating inclusive spaces",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -237,7 +217,6 @@
         {
           "title": "How to reduce bias in your workplace",
           "description": "We all have bias -- especially the unconscious kind -- and it's preventing us from doing our best work. Gone unchecked, bias can make employees feel resentful, frustrated and silenced, and it can even lead to outright discrimination and harassment. Check out three key ways to reduce bias at work, according to Just Work cofounders Kim Scott and Trier Bryant.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -248,7 +227,6 @@
         {
           "title": "Is it safe to speak up at work?",
           "description": "Are you afraid to share bad news, ask for help, or admit you were wrong? These are signs of being in a psychologically unsafe work environment. Adam breaks down the importance of psychological safety in preventing errors and promoting innovation and inclusion, and examines what it takes to build a culture of voice rather than silence",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -259,7 +237,6 @@
         {
           "title": "How managers create a culture of belonging",
           "description": "In this course, instructor Kimberly Manns helps you define what belonging means to you and how you can create belonging for yourself and others at your organization, using the Head, Heard, Hands framework. Kimberly discusses belonging, both within and at the organizational level, then introduces the Head, Heart, Hands (H3) framework.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -280,12 +257,10 @@
       "path": "/boundary-spanning",
       "image": "/public/assets/sub-category-card/boundary-spanning.png",
       "headerImage": "/public/assets/sub-category-header/boundary-spanning-header.png",
-      "progress": 0,
       "subjects": [
         {
           "title": "What is Boundary Spanning? Definition, Examples & Uses to an Organization",
           "description": "Boundary spanning is a process of developing external relationships by spanning the boundaries for the accomplishment of business objectives. It refers to a situation where an individual or an organization crosses the boundaries of a social group.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -296,7 +271,6 @@
         {
           "title": "Boundary Spanning Leadership",
           "description": "From 2008 to 2009, the Center for Creative Leadership surveyed 128 senior executives who participated in CCL’s Leadership at the Peak program. The executives served at the senior most levels of their organizations, with more than 15 years of management experience and responsibility for at least 500 people. This survey focuses on pressing trends and challenges affecting their organizations, and the role of leadership in spanning vertical, horizontal, stakeholder, demographic, and geographic boundaries.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -307,7 +281,6 @@
         {
           "title": "Creating a Culture of Collaboration",
           "description": "Author, CEO and instructor Lisa Bodell outlines the benefits of collaboration, and shares techniques for leaders or individual contributors to start building a team-centric culture.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -318,7 +291,6 @@
         {
           "title": "United We Stand: Boundary Spanning Leadership",
           "description": "In this episode, we’ll discover how leaders can use Boundary Spanning Leadership to create direction, alignment, and commitment across divisions in their organizations. How do separate teams and functions work together to achieve common goals, break down barriers, and recognize differences as strengths?",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -329,7 +301,6 @@
         {
           "title": "Working on a Cross Functional Team",
           "description": "A standard functional organization encourages people to focus on their own individual tasks. Cross-functional teams, on the other hand, bring everybody together to deliver the whole product.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -350,12 +321,10 @@
       "path": "/setting-strategic-vision",
       "image": "/public/assets/sub-category-card/setting-strategic-vision.png",
       "headerImage": "/public/assets/sub-category-header/setting-strategic-vision-header.png",
-      "progress": 0,
       "subjects": [
         {
           "title": "Connecting Your Work to Your Purpose",
           "description": "In this course, author and coach Alexandra Cole shows you how to define and achieve purpose in a way that is custom-fitted to your own life. Alexandra presents a host of tools for your journey, like identifying some common blockers on your path to purpose, understanding the important difference between passion and purpose, and narrowing down to find your next best step",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -366,7 +335,6 @@
         {
           "title": "Setting Business Unit Goals",
           "description": "In this course, leadership consultant Mike Figliuolo outlines how to set different types of business goals: quantitative, qualitative, commit, and stretch goals.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -377,7 +345,6 @@
         {
           "title": "Leading High-Performance Companies with Purpose",
           "description": "Hone the skills needed to outperform today's players and outdistance tomorrow's competitors, through Harvard Business School Executive Education.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -398,12 +365,10 @@
       "path": "/creativity-and-innovation",
       "image": "/public/assets/sub-category-card/creativity-and-innovation.png",
       "headerImage": "/public/assets/sub-category-header/creativity-and-innovation-header.png",
-      "progress": 0,
       "subjects": [
         {
           "title": "Cultivating the Four Kinds of Creativity",
           "description": "In this article the authors offer a new typology that breaks creative thinking into four types: integration, or showing that two things that appear different are the same; splitting, or seeing how… One island of stability in the sea of conversation about the future of work is the conviction that our jobs will become increasingly creative.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -414,7 +379,6 @@
         {
           "title": "How to manage for collective creativity",
           "description": "Harvard professor Linda Hill, co-author of 'Collective Genius,' has studied some of the world's most creative companies to come up with a set of tools and tactics to keep great ideas flowing -- from everyone in the company, not just the designated 'creatives.'",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -425,7 +389,6 @@
         {
           "title": "Balancing Innovation and Risk",
           "description": "Author and CEO Lisa Bodell guides you through the importance of smart risk-taking in innovation",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -436,7 +399,6 @@
         {
           "title": "Live From HIBT Summit: Payal Kadakia, Tristan Walker, and Perry Chen on Innovation",
           "description": "n this live conversation with Guy, the panel talks about how innovation doesn't require newness, but rather, authenticity. We'll be releasing more episodes from the Summit, so keep checking your podcast feed.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -447,7 +409,6 @@
         {
           "title": "Build Your Creative Capacity as a Leader",
           "description": "In this course, instructor and creativity strategist Natalie Nixon offers a fresh approach to leadership skills development so you can be more impactful in your role.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -468,12 +429,10 @@
       "path": "/influencing",
       "image": "/public/assets/sub-category-card/influencing.png",
       "headerImage": "/public/assets/sub-category-header/influencing-header.png",
-      "progress": 0,
       "subjects": [
         {
           "title": "Getting Employee Buy-In for Organizational Change",
           "description": "Although change is never easy, how leaders approach it makes a significant difference to whether it’s embraced or rejected. By addressing the organizational buy-in context, it’s much easier to move past resistance and stagnation, because your path forward will be shaped by realities rather than banalities. The most successful organizations do this by addressing six components of culture: legitimacy, ownership, relevance, attainability, authenticity, and impartiality.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -484,7 +443,6 @@
         {
           "title": "What makes us influential?",
           "description": "Jon Levy, a behavioral scientist who studies human activity, seeks to understand the power of influence in today's connected world. In this talk, Levy shares how he personally connects some of the world's most influential people, by simply inviting them to a dinner party.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -495,7 +453,6 @@
         {
           "title": "The 10 Essentials of Influence and Persuasion",
           "description": "In today's fast paced, constantly changing workplace, so much of our success comes down to our ability to influence colleagues, persuade co-workers, and get clients and customers to say yes to our ideas, proposals, and requests.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -506,7 +463,6 @@
         {
           "title": "Executive Influence",
           "description": "In this course, John Ullmen details the concept of executive influence.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -517,7 +473,6 @@
         {
           "title": "Influence is Good",
           "description": "This report is part of a series exploring how to limit suffering, promote flourishing, and minimize risk today and in the future through systemic change.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -538,12 +493,10 @@
       "path": "/building-talent",
       "image": "/public/assets/sub-category-card/building-talent.png",
       "headerImage": "/public/assets/sub-category-header/building-talent-header.png",
-      "progress": 0,
       "subjects": [
         {
           "title": "How to Attract Top Talent in 2022",
           "description": "A seismic change in how people view work and the meaning work brings to their lives has created the biggest talent crisis in recent history.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -554,7 +507,6 @@
         {
           "title": "Human capital at work: The value of experience",
           "description": "Human capital represents two-thirds of wealth for the average individual—and work experience contributes almost half of that value.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -565,7 +517,6 @@
         {
           "title": "Coach Your Team to Learn, Stretch, and Grow",
           "description": "Learn why employee growth is so fundamental for advancement, how strong leaders can identify and develop top talent, and what an organization stands to gain from increased employee loyalty.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -576,7 +527,6 @@
         {
           "title": "Developing Your Team Members",
           "description": "In this course, Mike Figliuolo shares a practical approach that can help you address the unique needs of your team members and determine how to best allocate your time in their development.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -597,12 +547,10 @@
       "path": "/business-impact",
       "image": "/public/assets/sub-category-card/business-impact.png",
       "headerImage": "/public/assets/sub-category-header/business-impact-header.png",
-      "progress": 0,
       "subjects": [
         {
           "title": "Level Up Your Leaders",
           "description": "Work, fast-tracked into the future In recent years, one adage has reverberated from boardrooms to business headlines: 'Future-proof your organization.'",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -613,7 +561,6 @@
         {
           "title": "Building a Finance Function That Drives",
           "description": "Geopolitical uncertainty, supply chain challenges, and issues related to cash flow and revenue streams in recent years have increased the workloads and raised the profile of finance departments within organizations.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -624,7 +571,6 @@
         {
           "title": "The ten rules of growth",
           "description": "One of the surest signs of a thriving enterprise is robust and consistent revenue growth. That has not been easy to accomplish over the past 15 years.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -635,7 +581,6 @@
         {
           "title": "Designing Growth Strategies",
           "description": "University of Maryland Professor Anil Gupta emphasizes the necessity of business growth for talent retention, competitive advantage, and shareholder value, based on his experience with high-growth tech ventures and major corporations. He presents a framework for identifying and implementing high-potential growth strategies, and addresses the organizational and leadership prerequisites for fostering a high-growth company.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
@@ -646,7 +591,6 @@
         {
           "title": "Managerial Economics",
           "description": "To understand what managerial economics looks like in practice, Stefan explains how Google's auction-based advertising system employs the principles of game theory and how understanding this can help decision makers to outmaneuver their competitors.",
-          "completed": false,
           "resource": [
             {
               "type": "video",
