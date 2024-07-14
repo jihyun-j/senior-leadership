@@ -1,6 +1,7 @@
 import React from "react";
-import { useFetchCategory } from "../../util/data";
+
 import { Link } from "react-router-dom";
+import { useFetchCategory } from "../../hooks/useFetchCategory";
 
 const CategoryCard: React.FC = () => {
   const categories = useFetchCategory();

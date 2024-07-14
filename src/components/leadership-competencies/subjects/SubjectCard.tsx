@@ -1,11 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { SubjectPropsType } from "../../../types/categories";
 import VideoResource from "./VideoResource";
+// import { useUpdateCompletion } from "../../../hooks/useUpdateCompletion";
 
 const SubjectCard: React.FC<SubjectPropsType> = ({ subjects }) => {
-  const onEndedHandler = () => {
-    // 비디오 시청이 끝나면 해당 주제에 대한 progress가 100%가 된다.
-    console.log("End!");
+  const [completedVideos, setCompletedVideos] = useState(true);
+  // const { updateCompletion } = useUpdateCompletion();
+
+  const onEndedHandler = async (title: string) => {
+    setCompletedVideos(completedVideos);
+    console.log(title, completedVideos);
+
+    // await updateCompletion(title, completedVideos);
   };
 
   return (
@@ -16,9 +22,9 @@ const SubjectCard: React.FC<SubjectPropsType> = ({ subjects }) => {
             <div key={subject.title}>
               <VideoResource
                 url={subject.resource.map((resource) => resource.url)}
-                onEnded={onEndedHandler}
+                onEnded={() => onEndedHandler(subject.title)}
               />
-              <span>{subject.progress}</span>
+              <span>{subject.completed ? "Done" : "Not"}</span>
               <p>{subject.title}</p>
               <p>{subject.description}</p>
             </div>

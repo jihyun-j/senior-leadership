@@ -1,8 +1,9 @@
 import React from "react";
-import { useFetchCategory } from "../../util/data";
+
 import { useParams } from "react-router";
 import CategoryHeader from "../../components/CategoryHeader";
 import SubjectList from "../../components/leadership-competencies/subjects/SubjsectList";
+import { useFetchCategory } from "../../hooks/useFetchCategory";
 
 const SubjectsPage: React.FC = () => {
   const categories = useFetchCategory();

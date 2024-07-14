@@ -6,12 +6,14 @@ import ProfessionalDevelopment from "./pages/professional-development/Profession
 import ExecutiveCoaching from "./pages/executive-coaching/ExecutiveCoaching";
 import LeadershipCompetencies from "./pages/leadership-competencies/LeadershipCompetencies";
 import SubjectsPage from "./pages/leadership-competencies/SubjectsPage";
+import Login from "./pages/Login";
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
       <Routes>
+        <Route path="login" element={<Login />}></Route>
         <Route path="/" element={<Home />}></Route>
         <Route
           path="/professional-development"
