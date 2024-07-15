@@ -1,13 +1,47 @@
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
 import { CategoriesType } from "../types/categories";
+import { UsersDataType } from "../types/users";
 
-const baseUrl = "http://localhost:3000/categories";
+const categoryUrl = "http://localhost:3000/categories";
+const userUrl = "http://localhost:3000/users";
 
-export const fetchCategoryData = async (): Promise<CategoriesType[]> => {
+// 카테고리 데이터 가져오기
+export const getCategoryData = async (): Promise<CategoriesType[]> => {
   try {
-    const response = await axios.get<CategoriesType[]>(baseUrl);
+    const response = await axios.get<CategoriesType[]>(categoryUrl);
     return response.data;
   } catch (error) {
     return [];
+  }
+};
+
+// 유저 데이터 추가하기
+export const addUserData = async (user: UsersDataType): Promise<void> => {
+  try {
+    const response = await axios.get(userUrl);
+    const existingUsers: UsersDataType[] = response.data;
+    const userExists = existingUsers.some(
+      (existingUser) => existingUser.id === user.id
+    );
+
+    if (!userExists) {
+      await axios.post(userUrl, user);
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// 유저 데이터 가져오기
+export const getUserData = async (
+  uid: string
+): Promise<UsersDataType | null> => {
+  try {
+    const response: AxiosResponse<UsersDataType[]> = await axios.get(
+      `${userUrl}/${uid}`
+    );
+    return response.data.length > 0 ? response.data[0] : null;
+  } catch (error) {
+    return null;
   }
 };

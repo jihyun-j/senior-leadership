@@ -5,12 +5,14 @@ export type CategoriesType = {
   path: string;
   image: string;
   headerImage: string;
+  progress: number;
   subjects: SubjectType[];
 };
 
 export type SubjectType = {
   title: string;
   description: string;
+  completed: boolean;
   resource: ResourceType[];
 };
 
@@ -31,3 +33,11 @@ export type VideoResourcePropsType = {
   url: string[];
   onEnded: () => void;
 };
+
+export type AddUserDataWithCategories = {
+  title: string;
+  progress: number;
+  subjects: AddUserDateWithSubjects[];
+};
+
+export type AddUserDateWithSubjects = Pick<SubjectType, "title" | "completed">;

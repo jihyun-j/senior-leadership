@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { CategoriesType } from "../types/categories";
-import { fetchCategoryData } from "../util/api";
+import { getCategoryData } from "../util/api";
 
 export const useFetchCategory = () => {
   const [data, setData] = useState<CategoriesType[] | null>(null);
@@ -8,7 +8,7 @@ export const useFetchCategory = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await fetchCategoryData();
+        const result = await getCategoryData();
         setData(result);
       } catch (error) {
         console.log(error);

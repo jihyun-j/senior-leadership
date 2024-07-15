@@ -1,17 +1,12 @@
 import React, { useState } from "react";
 import { SubjectPropsType } from "../../../types/categories";
 import VideoResource from "./VideoResource";
-// import { useUpdateCompletion } from "../../../hooks/useUpdateCompletion";
 
 const SubjectCard: React.FC<SubjectPropsType> = ({ subjects }) => {
   const [completedVideos, setCompletedVideos] = useState(true);
-  // const { updateCompletion } = useUpdateCompletion();
 
-  const onEndedHandler = async (title: string) => {
+  const onEndedHandler = async () => {
     setCompletedVideos(completedVideos);
-    console.log(title, completedVideos);
-
-    // await updateCompletion(title, completedVideos);
   };
 
   return (
@@ -22,7 +17,7 @@ const SubjectCard: React.FC<SubjectPropsType> = ({ subjects }) => {
             <div key={subject.title}>
               <VideoResource
                 url={subject.resource.map((resource) => resource.url)}
-                onEnded={() => onEndedHandler(subject.title)}
+                onEnded={() => onEndedHandler()}
               />
               <p>{subject.title}</p>
               <p>{subject.description}</p>
