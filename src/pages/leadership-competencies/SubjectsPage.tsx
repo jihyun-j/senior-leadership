@@ -10,8 +10,6 @@ const SubjectsPage: React.FC = () => {
   const { categoryName } = useParams();
   const userData = useFetchUserData();
 
-  console.log(categoryName);
-
   // 카테고리 헤더 이미지만 추출
   const headerImg = categories
     ?.filter((category) => category.path === `/${categoryName}`)
@@ -21,8 +19,6 @@ const SubjectsPage: React.FC = () => {
   const currentUserSubjects = userData?.categories
     .filter((category) => category.path === `/${categoryName}`)
     .map((categories) => categories);
-
-  console.log(currentUserSubjects);
 
   return (
     <div>

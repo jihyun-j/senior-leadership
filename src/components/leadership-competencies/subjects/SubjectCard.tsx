@@ -1,41 +1,34 @@
 import React, { useState } from "react";
-import { SubjectPropsType } from "../../../types/categories";
 import VideoResource from "./VideoResource";
-// import { updateSubjectCompletion } from "../../../util/api";
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
 import { UserLearningSubjectsProps } from "../../../types/users";
 
 const SubjectCard: React.FC<UserLearningSubjectsProps> = ({ subjects }) => {
   const [completedVideos, setCompletedVideos] = useState(true);
-  const uid = localStorage.getItem("user_token");
-  const { categoryName } = useParams();
-  const replaceCategoryName = categoryName?.replace(/\b\w/g, (match) =>
-    match.toUpperCase()
-  );
+  // const uid = localStorage.getItem("user_token");
+  // const { categoryName } = useParams();
+  // const replaceCategoryName = categoryName?.replace(/\b\w/g, (match) =>
+  //   match.toUpperCase()
+  // );
 
-  // const onEndedHandler = async (
-  //   uid: string | null,
-  //   categoryTitle: string | undefined,
-  //   subjectTitle: string
-  // ) => {
-  //   console.log("end");
-  //   setCompletedVideos(completedVideos);
-  //   // await updateSubjectCompletion(uid, categoryTitle, subjectTitle);
-  // };
+  const onEndedHandler = async () => {
+    console.log("end");
+    setCompletedVideos(completedVideos);
+    // await updateSubjectCompletion(uid, categoryTitle, subjectTitle);
+  };
 
   return (
     <div className="grid grid-cols-3 gap-10">
       {subjects?.map((subject) =>
-        subject.map((subject) => {
+        subject.subjects.map((subject) => {
           return (
-            <div key={subject.title}>
-              {/* <VideoResource
+            <div>
+              <VideoResource
                 url={subject.resource.map((resource) => resource.url)}
-                onEnded={() =>
-                  onEndedHandler(uid, replaceCategoryName, subject.title)
-                }
-              /> */}
-              <p>{subject.completed ? "true" : "false"}</p>
+                onEnded={onEndedHandler}
+              />
+
+              <span>{subject.completed ? "Completed" : "Not Compeleted"}</span>
               <p>{subject.title}</p>
               <p>{subject.description}</p>
             </div>

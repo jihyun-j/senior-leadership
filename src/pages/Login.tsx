@@ -22,6 +22,7 @@ const Login: React.FC = () => {
       subjects: category.subjects.map((subject) => ({
         ...subject,
         completed: false,
+        resource: subject.resource,
       })),
     })) as UserLearningCategoriesType[];
 

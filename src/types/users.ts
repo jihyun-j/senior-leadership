@@ -15,6 +15,11 @@ export type UserLearningSubjectsType = {
   title: string;
   description: string;
   completed: boolean;
+  resource: UserLearningResource[];
+};
+
+export type UserLearningResource = {
+  url: string;
 };
 
 export type UserLearningSubjectsProps = {
