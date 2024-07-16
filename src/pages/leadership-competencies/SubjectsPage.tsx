@@ -11,6 +11,7 @@ const SubjectsPage: React.FC = () => {
   const userData = useFetchUserData();
 
   console.log(userData);
+
   // 카테고리 헤더 이미지만 추출
   const headerImg = categories
     ?.filter((category) => category.path === `/${categoryName}`)

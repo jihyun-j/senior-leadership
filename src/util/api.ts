@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 import { CategoriesType } from "../types/categories";
 import { UsersDataType } from "../types/users";
 
@@ -33,14 +33,15 @@ export const addUserData = async (user: UsersDataType): Promise<void> => {
 };
 
 // 유저 데이터 가져오기
-export const getUserData = async (): Promise<UsersDataType | null> => {
+export const getUserData = async (
+  uid: string
+): Promise<UsersDataType | null> => {
   try {
-    const uid = localStorage.getItem("user_uid");
-    const response: AxiosResponse<UsersDataType[]> = await axios.get(
-      `${userUrl}/${uid}`
-    );
-    return response.data.length > 0 ? response.data[0] : null;
+    const response = await axios.get<UsersDataType>(`${userUrl}/${uid}`);
+    return response.data ? response.data : null;
   } catch (error) {
     return null;
   }
 };
+
+// 유저 데이터 업데이트

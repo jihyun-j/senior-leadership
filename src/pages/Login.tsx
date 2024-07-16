@@ -33,7 +33,7 @@ const Login: React.FC = () => {
             localStorage.setItem("user_token", token);
             localStorage.setItem("user_uid", user.uid);
 
-            const userData = await getUserData();
+            const userData = await getUserData(user.uid);
             if (!userData) {
               if (categoryResults && categoryResults.length > 0) {
                 await addUserData({
