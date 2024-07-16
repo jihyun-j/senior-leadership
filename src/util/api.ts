@@ -33,10 +33,9 @@ export const addUserData = async (user: UsersDataType): Promise<void> => {
 };
 
 // 유저 데이터 가져오기
-export const getUserData = async (
-  uid: string
-): Promise<UsersDataType | null> => {
+export const getUserData = async (): Promise<UsersDataType | null> => {
   try {
+    const uid = localStorage.getItem("user_uid");
     const response: AxiosResponse<UsersDataType[]> = await axios.get(
       `${userUrl}/${uid}`
     );

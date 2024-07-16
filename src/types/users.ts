@@ -1,5 +1,3 @@
-import { SubjectType } from "./categories";
-
 export type UsersDataType = {
   id: string;
   email: string | null;
@@ -12,7 +10,8 @@ export type UserLearningCategoriesType = {
   subjects: UserLearningSubjectsType[];
 };
 
-export type UserLearningSubjectsType = Omit<
-  SubjectType,
-  "description" | "resource"
->;
+export type UserLearningSubjectsType = {
+  title: string;
+  description: string;
+  completed: boolean;
+};

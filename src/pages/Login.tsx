@@ -14,14 +14,15 @@ const Login: React.FC = () => {
   };
 
   const categoriesData = useFetchCategory();
-  const categoryResults = categoriesData?.map((category) => ({
-    title: category.title,
-    progress: category.progress ?? 0,
-    subjects: category.subjects.map((subject) => ({
-      title: subject.title,
-      completed: subject.completed ?? false,
-    })),
-  })) as UserLearningCategoriesType[];
+  const categoryResults: UserLearningCategoriesType[] | undefined =
+    categoriesData?.map((category) => ({
+      title: category.title,
+      progress: category.progress ?? 0,
+      subjects: category.subjects.map((subject) => ({
+        ...subject,
+        completed: false,
+      })),
+    })) as UserLearningCategoriesType[];
 
   useEffect(() => {
     const authObserver = auth.onAuthStateChanged(async (user) => {
@@ -30,13 +31,17 @@ const Login: React.FC = () => {
           const token = await auth.currentUser?.getIdToken();
           if (token) {
             localStorage.setItem("user_token", token);
-            const userData = await getUserData(user.uid);
+            localStorage.setItem("user_uid", user.uid);
+
+            const userData = await getUserData();
             if (!userData) {
-              await addUserData({
-                id: user.uid,
-                email: user.email,
-                categories: categoryResults,
-              });
+              if (categoryResults && categoryResults.length > 0) {
+                await addUserData({
+                  id: user.uid,
+                  email: user.email,
+                  categories: categoryResults,
+                });
+              }
             } else {
               console.log(user.email);
             }
