@@ -18,6 +18,7 @@ const Login: React.FC = () => {
     categoriesData?.map((category) => ({
       title: category.title,
       progress: category.progress ?? 0,
+      path: category.path,
       subjects: category.subjects.map((subject) => ({
         ...subject,
         completed: false,
@@ -39,6 +40,7 @@ const Login: React.FC = () => {
                 await addUserData({
                   id: user.uid,
                   email: user.email,
+
                   categories: categoryResults,
                 });
               }

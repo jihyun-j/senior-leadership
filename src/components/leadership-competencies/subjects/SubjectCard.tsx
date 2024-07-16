@@ -3,8 +3,9 @@ import { SubjectPropsType } from "../../../types/categories";
 import VideoResource from "./VideoResource";
 // import { updateSubjectCompletion } from "../../../util/api";
 import { useParams } from "react-router";
+import { UserLearningSubjectsProps } from "../../../types/users";
 
-const SubjectCard: React.FC<SubjectPropsType> = ({ subjects }) => {
+const SubjectCard: React.FC<UserLearningSubjectsProps> = ({ subjects }) => {
   const [completedVideos, setCompletedVideos] = useState(true);
   const uid = localStorage.getItem("user_token");
   const { categoryName } = useParams();

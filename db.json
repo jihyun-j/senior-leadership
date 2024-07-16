@@ -613,12 +613,13 @@
   ],
   "users": [
     {
-      "id": "97kb74Z62DQsBO93mljsbxrl6Cc2",
+      "id": "GWrHXd1MUzdcA1txaBoZU7Ff9Vq1",
       "email": "test@test.com",
       "categories": [
         {
           "title": "Building Trust",
           "progress": 0,
+          "path": "/building-trust",
           "subjects": [
             {
               "title": "Trusted Partner Leadership Intention Workshop",
@@ -669,6 +670,7 @@
         {
           "title": "Agility",
           "progress": 0,
+          "path": "/agility",
           "subjects": [
             {
               "title": "How Adaptive Strategy Happens",
@@ -730,6 +732,7 @@
         {
           "title": "Decision Making",
           "progress": 0,
+          "path": "/decision-making",
           "subjects": [
             {
               "title": "Speed as a Habit",
@@ -791,6 +794,7 @@
         {
           "title": "Empathic & Inclusive Leadership",
           "progress": 0,
+          "path": "/empathic-and-inclusive-leadership",
           "subjects": [
             {
               "title": "The Key to Inclusive Leadership",
@@ -852,6 +856,7 @@
         {
           "title": "Boundary Spanning",
           "progress": 0,
+          "path": "/boundary-spanning",
           "subjects": [
             {
               "title": "What is Boundary Spanning? Definition, Examples & Uses to an Organization",
@@ -913,6 +918,7 @@
         {
           "title": "Setting Strategic Vision",
           "progress": 0,
+          "path": "/setting-strategic-vision",
           "subjects": [
             {
               "title": "Connecting Your Work to Your Purpose",
@@ -952,6 +958,7 @@
         {
           "title": "Creativity & Innovation",
           "progress": 0,
+          "path": "/creativity-and-innovation",
           "subjects": [
             {
               "title": "Cultivating the Four Kinds of Creativity",
@@ -1013,6 +1020,7 @@
         {
           "title": "Influencing",
           "progress": 0,
+          "path": "/influencing",
           "subjects": [
             {
               "title": "Getting Employee Buy-In for Organizational Change",
@@ -1074,6 +1082,7 @@
         {
           "title": "Building Talent",
           "progress": 0,
+          "path": "/building-talent",
           "subjects": [
             {
               "title": "How to Attract Top Talent in 2022",
@@ -1124,6 +1133,7 @@
         {
           "title": "Business Impact",
           "progress": 0,
+          "path": "/business-impact",
           "subjects": [
             {
               "title": "Level Up Your Leaders",

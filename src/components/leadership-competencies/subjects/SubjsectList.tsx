@@ -1,8 +1,8 @@
 import React from "react";
 import SubjectCard from "./SubjectCard";
-import { SubjectPropsType } from "../../../types/categories";
+import { UserLearningSubjectsProps } from "../../../types/users";
 
-const SubjectList: React.FC<SubjectPropsType> = ({ subjects }) => {
+const SubjectList: React.FC<UserLearningSubjectsProps> = ({ subjects }) => {
   return (
     <div>
       <SubjectCard subjects={subjects} />
