@@ -1,6 +1,10 @@
 import axios from "axios";
 import { CategoriesType } from "../types/categories";
-import { UsersDataType } from "../types/users";
+import {
+  UserLearningCategoriesType,
+  UserLearningSubjectsType,
+  UsersDataType,
+} from "../types/users";
 
 const categoryUrl = "http://localhost:3000/categories";
 const userUrl = "http://localhost:3000/users";
@@ -45,3 +49,46 @@ export const getUserData = async (
 };
 
 // 유저 데이터 업데이트
+export const updateLearningData = async (
+  uid: string | null,
+  categoryTitle: string,
+  subjectTitle: string
+) => {
+  try {
+    const response = await axios.get<UsersDataType>(`${userUrl}/${uid}`);
+    const userData = response.data;
+
+    if (userData) {
+      const updatedCategories = userData.categories.map(
+        (category: UserLearningCategoriesType) => {
+          if (category.title === categoryTitle) {
+            const updatedSubjects = category.subjects.map(
+              (subject: UserLearningSubjectsType) =>
+                subject.title === subjectTitle
+                  ? { ...subject, completed: true }
+                  : subject
+            );
+
+            const completedCount = updatedSubjects.filter(
+              (subject) => subject.completed
+            ).length;
+            const totalSubjects = updatedSubjects.length;
+            const newProgress = (completedCount / totalSubjects) * 100;
+
+            return {
+              ...category,
+              progress: newProgress,
+              subjects: updatedSubjects,
+            };
+          }
+          return category;
+        }
+      );
+
+      await axios.patch(`${userUrl}/${uid}`, { categories: updatedCategories });
+      return updatedCategories;
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};

@@ -1,36 +1,37 @@
 import React, { useState } from "react";
 import VideoResource from "./VideoResource";
-// import { useParams } from "react-router";
-import { UserLearningSubjectsProps } from "../../../types/users";
+import { UserDataTypeProps } from "../../../types/users";
+import { updateLearningData } from "../../../util/api";
 
-const SubjectCard: React.FC<UserLearningSubjectsProps> = ({ subjects }) => {
+const SubjectCard: React.FC<UserDataTypeProps> = ({ subjects }) => {
   const [completedVideos, setCompletedVideos] = useState(true);
-  // const uid = localStorage.getItem("user_token");
-  // const { categoryName } = useParams();
-  // const replaceCategoryName = categoryName?.replace(/\b\w/g, (match) =>
-  //   match.toUpperCase()
-  // );
+  const uid = localStorage.getItem("user_uid");
 
-  const onEndedHandler = async () => {
-    console.log("end");
+  const onEndedHandler = async (
+    uid: string | null,
+    categoryTitle: string,
+    subjectTitle: string
+  ) => {
     setCompletedVideos(completedVideos);
-    // await updateSubjectCompletion(uid, categoryTitle, subjectTitle);
+    await updateLearningData(uid, categoryTitle, subjectTitle);
   };
 
   return (
     <div className="grid grid-cols-3 gap-10">
-      {subjects?.map((subject) =>
-        subject.subjects.map((subject) => {
+      {subjects?.map((categories) =>
+        categories.subjects.map((subject) => {
+          const videoUrl = subject.resource.map((resource) => resource.url);
+          const subjectTitle = subject.title;
+          const categoryTitle = categories.title;
           return (
-            <div>
+            <div key={subjectTitle}>
               <VideoResource
-                url={subject.resource.map((resource) => resource.url)}
-                onEnded={onEndedHandler}
+                url={videoUrl}
+                onEnded={() => onEndedHandler(uid, categoryTitle, subjectTitle)}
               />
-
-              <span>{subject.completed ? "Completed" : "Not Compeleted"}</span>
-              <p>{subject.title}</p>
-              <p>{subject.description}</p>
+              <div>{subject.title}</div>
+              <div>{subject.completed ? "Completed" : "Not Completed"}</div>
+              <div>{subject.description}</div>
             </div>
           );
         })

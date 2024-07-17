@@ -41,7 +41,6 @@ const Login: React.FC = () => {
                 await addUserData({
                   id: user.uid,
                   email: user.email,
-
                   categories: categoryResults,
                 });
               }

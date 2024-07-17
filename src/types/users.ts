@@ -22,6 +22,6 @@ export type UserLearningResource = {
   url: string;
 };
 
-export type UserLearningSubjectsProps = {
+export type UserDataTypeProps = {
   subjects: UserLearningCategoriesType[] | undefined;
 };

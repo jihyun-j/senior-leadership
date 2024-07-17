@@ -669,7 +669,7 @@
         },
         {
           "title": "Agility",
-          "progress": 0,
+          "progress": 20,
           "path": "/agility",
           "subjects": [
             {
@@ -703,7 +703,7 @@
                   "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ"
                 }
               ],
-              "completed": false
+              "completed": true
             },
             {
               "title": "Building Resilience as a Leader",
