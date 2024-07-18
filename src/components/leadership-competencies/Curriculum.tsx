@@ -19,7 +19,7 @@ const Curriculum = () => {
         return (
           <div>
             <p>{info.title}</p>
-            <ul>
+            <ul key={info.title}>
               {info.definition.map((definition) => (
                 <li>{definition}</li>
               ))}
