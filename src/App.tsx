@@ -8,27 +8,34 @@ import LeadershipCompetencies from "./pages/leadership-competencies/LeadershipCo
 import SubjectsPage from "./pages/leadership-competencies/SubjectsPage";
 import Login from "./pages/Login";
 import PrivateRoutes from "./util/PrivateRoutes";
+import LearningSubject from "./pages/professional-development/LearningSubject";
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="login" element={<Login />}></Route>
+        <Route path="login" element={<Login />} />
         <Route element={<PrivateRoutes />}>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Home />} />
           <Route
             path="/professional-development"
-            element={<ProfessionalDevelopment />}></Route>
+            element={<ProfessionalDevelopment />}
+          />
           <Route
             path="/leadership-competencies"
-            element={<LeadershipCompetencies />}></Route>
-          <Route
-            path="/executive-coaching"
-            element={<ExecutiveCoaching />}></Route>
+            element={<LeadershipCompetencies />}
+          />
+          <Route path="/executive-coaching" element={<ExecutiveCoaching />} />
           <Route
             path="/professional-development/:categoryName"
-            element={<SubjectsPage />}></Route>
+            element={<SubjectsPage />}
+          />
+
+          <Route
+            path="/professional-development/:categoryName/:subjectName"
+            element={<LearningSubject />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>

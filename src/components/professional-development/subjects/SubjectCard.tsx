@@ -1,37 +1,32 @@
-import React, { useState } from "react";
-import VideoResource from "./VideoResource";
+import React from "react";
 import { UserDataTypeProps } from "../../../types/users";
-import { updateLearningData } from "../../../util/api";
+import { Link } from "react-router-dom";
 
 const SubjectCard: React.FC<UserDataTypeProps> = ({ subjects }) => {
-  const [completedVideos, setCompletedVideos] = useState(true);
-  const uid = localStorage.getItem("user_uid");
-
-  const onEndedHandler = async (
-    uid: string | null,
-    categoryTitle: string,
-    subjectTitle: string
-  ) => {
-    setCompletedVideos(completedVideos);
-    await updateLearningData(uid, categoryTitle, subjectTitle);
-  };
-
   return (
-    <div className="grid grid-cols-3 gap-10">
+    <div className="max-w-screen-lg my-0 mx-auto ">
+      <p>{subjects?.map((subject) => subject.progress)}</p>
       {subjects?.map((categories) =>
         categories.subjects.map((subject) => {
-          const videoUrl = subject.resource.map((resource) => resource.url);
           const subjectTitle = subject.title;
-          const categoryTitle = categories.title;
           return (
-            <div key={subjectTitle}>
-              <VideoResource
-                url={videoUrl}
-                onEnded={() => onEndedHandler(uid, categoryTitle, subjectTitle)}
-              />
-              <div>{subject.title}</div>
-              <div>{subject.completed ? "Completed" : "Not Completed"}</div>
-              <div>{subject.description}</div>
+            <div key={subjectTitle} className="grid grid-cols-3 gap-5 mb-10">
+              <div className="col-span-2">
+                <h5 className="text-h5">{subject.title}</h5>
+                <p>{subject.description}</p>
+                <span>{subject.completed ? "Completed" : "Not Completed"}</span>
+                {subject.completed ? (
+                  <Link
+                    to={`/professional-development${categories.path}/${subject.title}`}>
+                    Watch Again
+                  </Link>
+                ) : (
+                  <Link
+                    to={`/professional-development${categories.path}/${subject.title}`}>
+                    Watch Now
+                  </Link>
+                )}
+              </div>
             </div>
           );
         })

@@ -34,6 +34,11 @@ export type VideoResourcePropsType = {
   onEnded: () => void;
 };
 
+export type VideoResourceRef = {
+  getCurrentTime: () => number;
+  seekTo: (seconds: number) => void;
+};
+
 export type AddUserDataWithCategories = {
   title: string;
   progress: number;
@@ -41,3 +46,15 @@ export type AddUserDataWithCategories = {
 };
 
 export type AddUserDateWithSubjects = Pick<SubjectType, "title" | "completed">;
+
+// Notes
+export type Notes = {
+  time: number;
+  text: string;
+};
+
+export type NotesProps = {
+  notes: Notes[];
+  onAddNote: (text: string) => void;
+  onNoteClick: (time: number) => void;
+};
