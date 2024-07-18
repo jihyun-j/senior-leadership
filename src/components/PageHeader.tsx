@@ -15,6 +15,7 @@ const PageHeader: React.FC = () => {
                 src={`${item.navImage}`}
                 alt={`${item.navName} header image`}
               />
+              <h2>{item.navName}</h2>
             </div>
           );
         })}

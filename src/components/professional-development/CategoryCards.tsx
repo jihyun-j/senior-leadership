@@ -11,7 +11,7 @@ const CategoryCard: React.FC = () => {
       {categories?.map((category) => {
         return (
           <Link
-            to={`/leadership-competencies${category.path}`}
+            to={`/professional-development${category.path}`}
             key={category.title}>
             <img src={`${category.image}`} alt="" />
             <h3>{category.title}</h3>

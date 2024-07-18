@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
 import CategoryHeader from "../../components/CategoryHeader";
-import SubjectList from "../../components/leadership-competencies/subjects/SubjsectList";
+import SubjectList from "../../components/professional-development/subjects/SubjsectList";
 import { useFetchCategory } from "../../hooks/useFetchCategory";
 import { useFetchUserData } from "../../hooks/useFetchUserData";
 
