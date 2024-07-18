@@ -1,20 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { navMenu } from "../../util/nav";
 
 const Header: React.FC = () => {
   return (
     <div>
-      <img src="../assets/home-header.png" alt="" />
-      <div className="flex flex-row">
-        {navMenu.map((nav) => (
-          <Link
-            to={`${nav.navLink}`}
-            className="bg-black text-white"
-            key={nav.navName}>
-            {nav.navName}
-          </Link>
-        ))}
+      <div className="relative">
+        <img src="../assets/home-header.png" alt="home-header image" />
+        <div className="absolute top-1/2 left-28">
+          <span className="uppercase bg-black text-white px-4 py-2">
+            resources for directors, vps &l25
+          </span>
+          <h1 className="text-h1 text-white">Leading@Autodesk</h1>
+        </div>
       </div>
     </div>
   );
