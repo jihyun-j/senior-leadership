@@ -27,7 +27,7 @@ function App() {
             path="/executive-coaching"
             element={<ExecutiveCoaching />}></Route>
           <Route
-            path="/leadership-competencies/:categoryName"
+            path="/professional-development/:categoryName"
             element={<SubjectsPage />}></Route>
         </Route>
       </Routes>
