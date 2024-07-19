@@ -7,7 +7,6 @@ const ProfessionalDevelopment: React.FC = () => {
   return (
     <>
       <PageHeader />
-
       <Header />
       <CategoryCard />
     </>

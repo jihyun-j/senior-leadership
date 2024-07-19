@@ -13,6 +13,7 @@ export type SubjectType = {
   title: string;
   description: string;
   completed: boolean;
+  notes: Notes[];
   resource: ResourceType[];
 };
 
@@ -51,6 +52,7 @@ export type AddUserDateWithSubjects = Pick<SubjectType, "title" | "completed">;
 export type Notes = {
   time: number;
   text: string;
+  formattedTime: string;
 };
 
 export type NotesProps = {

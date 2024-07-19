@@ -143,7 +143,7 @@
           ]
         },
         {
-          "title": "Even/Over Statements: The Prioritization Tool That Brings Your Strategy to Life",
+          "title": "Even-Over Statements: The Prioritization Tool That Brings Your Strategy to Life",
           "description": "The article introduces 'Even/Over' statements as a tool to prioritize one aspect over another for improved decision-making and strategic edge in business, with successful examples from Airbnb and In-N-Out Burger, and outlines a method to define these statements within teams to foster aligned autonomy and scale effective decision-making.",
           "resource": [
             {
@@ -681,7 +681,14 @@
                   "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ"
                 }
               ],
-              "completed": false
+              "completed": false,
+              "notes": [
+                {
+                  "time": 3.215229165939331,
+                  "text": "ㄴ어린어히",
+                  "formattedTime": "0:03"
+                }
+              ]
             },
             {
               "title": "Cultivating Mental Agility",
@@ -746,7 +753,7 @@
               "completed": false
             },
             {
-              "title": "Even/Over Statements: The Prioritization Tool That Brings Your Strategy to Life",
+              "title": "Even-Over Statements: The Prioritization Tool That Brings Your Strategy to Life",
               "description": "The article introduces 'Even/Over' statements as a tool to prioritize one aspect over another for improved decision-making and strategic edge in business, with successful examples from Airbnb and In-N-Out Burger, and outlines a method to define these statements within teams to foster aligned autonomy and scale effective decision-making.",
               "resource": [
                 {

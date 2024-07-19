@@ -92,3 +92,35 @@ export const updateLearningData = async (
     console.log(error);
   }
 };
+
+// 유저 노트 추가
+export const addUserNotes = async (
+  uid: string | null,
+  categoryTitle: string | undefined,
+  subjectTitle: string | undefined,
+  notes: string,
+  time: number,
+  formattedTime: string
+) => {
+  try {
+    const response = await axios.get<UsersDataType>(`${userUrl}/${uid}`);
+    const userData = response.data;
+
+    if (userData) {
+      userData.categories.forEach((category) => {
+        if (category.title === categoryTitle) {
+          category.subjects.forEach((subject) => {
+            if (subject.title === subjectTitle && notes.length > 0) {
+              subject.notes = subject.notes || [];
+              subject.notes.push({ time, text: notes, formattedTime });
+            }
+          });
+        }
+      });
+
+      await axios.put(`${userUrl}/${uid}`, userData);
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};

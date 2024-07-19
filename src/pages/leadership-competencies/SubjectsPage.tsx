@@ -7,17 +7,17 @@ import { useFetchUserData } from "../../hooks/useFetchUserData";
 
 const SubjectsPage: React.FC = () => {
   const categories = useFetchCategory();
-  const { categoryName } = useParams();
+  const { categoryPath } = useParams();
   const userData = useFetchUserData();
 
   // 카테고리 헤더 이미지만 추출
   const headerImg = categories
-    ?.filter((category) => category.path === `/${categoryName}`)
+    ?.filter((category) => category.path === `/${categoryPath}`)
     .map((category) => category.headerImage);
 
   // 각 카테고리별 주제 추출
   const currentUserSubjects = userData?.categories
-    .filter((category) => category.path === `/${categoryName}`)
+    .filter((category) => category.path === `/${categoryPath}`)
     .map((categories) => categories);
 
   return (

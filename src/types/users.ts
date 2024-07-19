@@ -1,3 +1,5 @@
+import { Notes } from "./categories";
+
 export type UsersDataType = {
   id: string;
   email: string | null;
@@ -15,6 +17,7 @@ export type UserLearningSubjectsType = {
   title: string;
   description: string;
   completed: boolean;
+  notes: Notes[];
   resource: UserLearningResource[];
 };
 

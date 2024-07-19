@@ -28,12 +28,12 @@ function App() {
           />
           <Route path="/executive-coaching" element={<ExecutiveCoaching />} />
           <Route
-            path="/professional-development/:categoryName"
+            path="/professional-development/:categoryPath"
             element={<SubjectsPage />}
           />
 
           <Route
-            path="/professional-development/:categoryName/:subjectName"
+            path="/professional-development/:categoryPath/:subjectPath"
             element={<LearningSubject />}
           />
         </Route>

@@ -1,14 +1,15 @@
-import React, { useRef, useState } from "react";
-import { useParams } from "react-router";
+import { useRef, useState } from "react";
+import { useLocation, useParams } from "react-router";
 import { useFetchCategory } from "../../hooks/useFetchCategory";
-import { updateLearningData } from "../../util/api";
+import { addUserNotes, updateLearningData } from "../../util/api";
 import VideoResource from "../../components/professional-development/subjects/VideoResource";
 import NotesComponent from "../../components/professional-development/subjects/Notes";
 import { Notes, VideoResourceRef } from "../../types/categories";
+import { formatTime } from "../../util/formatTime";
 
 const LearningSubject = () => {
   const categories = useFetchCategory();
-  const { categoryName, subjectName } = useParams();
+  const { categoryPath, subjectPath } = useParams();
   const [completedVideos, setCompletedVideos] = useState(true);
   // const [playing, setPlaying] = useState(false);
   const [notes, setNotes] = useState<Notes[]>([]);
@@ -16,11 +17,20 @@ const LearningSubject = () => {
   const uid = localStorage.getItem("user_uid");
 
   const categoryTitle = categories
-    ?.filter((category) => category.path === `/${categoryName}`)
-    .map((category) => category.title);
+    ?.filter((category) => category.path === `/${categoryPath}`)
+    .map((category) => category.title)
+    .join(", ");
+
+  const subjectTitle = categories
+    ?.filter((category) => category.path === `/${categoryPath}`)
+    .flatMap((category) =>
+      category.subjects.filter((subject) => subject.title === subjectPath)
+    )
+    .map((subject) => subject.title)
+    .join(", ");
 
   const categoryData = categories
-    ?.filter((category) => category.path === `/${categoryName}`)
+    ?.filter((category) => category.path === `/${categoryPath}`)
     .map((category) => category);
 
   const onEndedHandler = async (
@@ -32,16 +42,26 @@ const LearningSubject = () => {
     await updateLearningData(uid, categoryTitle, subjectTitle);
   };
 
-  const handleAddNote = (text: string) => {
+  const handleAddNote = async (text: string) => {
     if (videoPlayerRef.current) {
       const time = videoPlayerRef.current.getCurrentTime();
-      console.log(time % 60);
-      setNotes([...notes, { time, text }]);
+      const formattedTime = formatTime(time);
+      setNotes([...notes, { time, text, formattedTime }]);
+
+      console.log(subjectTitle);
+      await addUserNotes(
+        uid,
+        categoryTitle,
+        subjectTitle,
+        text,
+        time,
+        formattedTime
+      );
     }
   };
 
   const handleNoteClick = (time: number) => {
-    console.log(time);
+    const formatedTime = formatTime(time);
     videoPlayerRef.current?.seekTo(time);
   };
 
@@ -49,13 +69,13 @@ const LearningSubject = () => {
     <>
       <div>
         <span>{categoryTitle}</span>
-        <h3>{subjectName}</h3>
+        <h3>{subjectPath}</h3>
       </div>
       <div className="grid grid-cols-3 gap-10">
         <div className="col-span-2">
           {categoryData?.map((categories) =>
             categories.subjects
-              .filter((subjects) => subjects.title === subjectName)
+              .filter((subjects) => subjects.title === subjectPath)
               .map((subject) => {
                 const videoUrl = subject.resource.map(
                   (resource) => resource.url

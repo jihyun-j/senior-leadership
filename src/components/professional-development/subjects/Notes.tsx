@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { NotesProps } from "../../../types/categories";
 
 const NotesComponent: React.FC<NotesProps> = ({
@@ -8,25 +8,35 @@ const NotesComponent: React.FC<NotesProps> = ({
 }) => {
   const [currentNote, setCurrentNote] = useState("");
 
-  const handleAddNote = () => {
+  const handleAddNote = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     onAddNote(currentNote);
     setCurrentNote("");
   };
+
   return (
-    <div className="bg-gold">
+    <div className="bg-clay h-svh">
       {notes.map((note) => {
         return (
-          <>
-            <li onClick={() => onNoteClick(note.time)}>
-              {note.time} / {note.text}
-            </li>
-          </>
+          <div key={note.time}>
+            <span
+              className="bg-plant cursor-pointer"
+              onClick={() => onNoteClick(note.time)}>
+              {note.formattedTime}
+            </span>
+            <span> Edit</span>
+            <span> Delete</span>
+            <p>{note.text}</p>
+          </div>
         );
       })}
-      <button onClick={handleAddNote}>Add Note</button>
-      <textarea
-        value={currentNote}
-        onChange={(e) => setCurrentNote(e.target.value)}></textarea>
+
+      <form onSubmit={handleAddNote}>
+        <input
+          value={currentNote}
+          onChange={(e) => setCurrentNote(e.target.value)}></input>
+        <button type="submit">Add Note</button>
+      </form>
     </div>
   );
 };
